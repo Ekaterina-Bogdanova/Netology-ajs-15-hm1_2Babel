@@ -4,8 +4,9 @@
   "description": "HW-Babel\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D1-\u001b[3~\u001b[3~\u001b[3~\u001b[3~\u001b[3~\u001b[3~\u001b[3~\u001b[3~\u001b[3~\u001b[3~Babel",
   "main": "index.js",
   "scripts": {
-    "start": "npx browser-sync start --server --files \"src/*.css*\" --ss \"./src\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npx browser-sync start --server --files \"src/*\" --ss \"./src\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d dist"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,12 @@
   },
   "homepage": "https://github.com/Ekaterina-Bogdanova/Netology-ajs-15-hm1_2Babel#readme",
   "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
     "browser-sync": "^2.27.5"
+  },
+  "dependencies": {
+    "core-js": "^3.16.2"
   }
 }
